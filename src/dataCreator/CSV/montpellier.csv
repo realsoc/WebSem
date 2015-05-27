@@ -1,9 +1,9 @@
-Genre;Nom;Lieux;Date début;Date fin;Production
+Genre;titre;lieu;date_debut;date_fin;Production
 Documentaire;inconnu;vue du ciel;01/01/2011;01/01/2011;
 série;Antigone 34;parking père louis / berthelot / QG;30/01/2011;08/04/2011; Mascaret Films
 émission TV;le bon samaritain;MTP Voltaire - casting;09/02/2011;09/02/2011;KWAI
 émission TV;le bon samaritain;MTP Voltaire - casting;12/02/2011;12/02/2011;KWAI
-émission TV;"le bon samaritain";MTP Voltaire - casting;14/02/2011;14/02/2011;KWAI
+émission TV;le bon samaritain;MTP Voltaire - casting;14/02/2011;14/02/2011;KWAI
 émission TV;la baie d'alger;Casting MAISON POUR TOUS VOLTAIRE;14/02/2011;14/02/2011;
 série;Antigone 34;comédie / café;15/02/2011;15/02/2011;Mascaret Films
 série;Antigone 34;quai du versdanson point zero;15/02/2011;16/02/2011;Mascaret Films
@@ -63,7 +63,7 @@ Film institutionnel;Projet APOKA;ruelles ecusson : petit sel, Bayle St Firmin ra
 Documentaire;HOMO'STORY;Ville - Gay pride;01/06/2011;05/06/2011;
 teaser;vestiaire;centre ville/parc de l'esplanade + passerelle;02/06/2011;02/06/2011;
 reperage;CFE-CGC métallurgie;congres-comédie corum;06/06/2011;07/06/2011;TV concept
-Documentaire;la ville autrement;quartier Malbosc;17/06/2011;18/06/2011;"MARJANE PRODUCTION"
+Documentaire;la ville autrement;quartier Malbosc;17/06/2011;18/06/2011;MARJANE PRODUCTION
 CM;De Profondis;maison des choeurs;26/06/2011;26/06/2011;
 LM;MICHAEL KOHLHAAS;casting;30/06/2011;30/06/2011;les films d'ici
 CM;Une Jeunesse française;reperage - ecole rue du père fabre rue haguenot / reperage Asso. Rrom rue du père fabre rue /MPT Voltaire rue du pere fabre rue haguenot;06/07/2011;13/07/2011;
@@ -127,7 +127,7 @@ CM;l'échappée;domaine de grammont;16/03/2012;16/03/2012;cineclectik
 émission TV;c'est pas sorcier;bd sarrail / bonne nouvelle / delattre de tassigny / pl comédie;19/03/2012;19/03/2012;France 3
 LM;pentito;hotel de ville;23/03/2012;23/03/2012;
 CM;Le procès;rue trésorier de la bourse;24/03/2012;24/03/2012;lycée jean Monnet
-émission TV;"France 5 - la maison France 5";déambulation centre ville;27/03/2012;27/03/2012;HL productions
+émission TV;France 5 - la maison France 5;déambulation centre ville;27/03/2012;27/03/2012;HL productions
 shooting photo;Petite oeuvre multimédia;hôtel de ville;30/03/2012;30/03/2012;
 clip musical;Reggae Time;esplanade charles de gaulles;31/03/2012;31/03/2012;
 CM;la curieuse histoire sans cuillère;rue des carmes du palais, rue valfère, rue potevine, rue de l'amandier, rue de l'huile, pl ste anne, rue philippy, rue ranchin, rue bayle, rue rebuffy;01/04/2012;01/04/2012; les NoUS
