@@ -3,29 +3,50 @@ package dataCreator;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.text.ParseException;
+import java.security.*;
+import java.io.UnsupportedEncodingException;
 
 public class Tournage{
 	private static final String DELIMITER_DATE = "/";
+	private int nTournage = 0;
 	private Film film;
 	private String city;
-	private Date begin;
-	private Date end;
+	private String begin;
+	private String end;
 	private String place;
+	private String id;
+
+	public Film getFilm(){
+		return film;
+	}
+	public int getNTournage(){
+		return nTournage;
+	}
+	public String getBegin(){
+		return begin;
+	}
+	public String getEnd(){
+		return end;
+	}	
+	public String getCity(){
+		return city;
+	}
+	public String getPlace(){
+		return place;
+	}
 
 	public Tournage(Film mFilm, String city, String date_debut, String date_fin, String place){
-		begin = new Date();
-		end = new Date();
 		this.city = city;
-		try{
-			begin = new SimpleDateFormat("dd/MM/yyyy").parse(date_debut);
-			end = new SimpleDateFormat("dd/MM/yyyy").parse(date_fin);
-			this.place = place;
-			this.film = film;
-		}catch(ParseException e){
-			e.printStackTrace();
-		}
+		begin = date_debut;
+		end = date_fin;
+		this.place = place;
+		this.film = film;
+
 	}
 	public String toString(){
-		return "Tournage à "+this.place+" "+this.city+" pour le film "+film.getTitle();
+		return "Tournage du film "+film.getTitle()+" numéro "+nTournage;
+	}
+	public void setNumber(int number){
+		this.nTournage = number;
 	}
 }
