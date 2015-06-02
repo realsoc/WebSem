@@ -35,16 +35,16 @@ public class Tournage{
 		return place;
 	}
 
-	public Tournage(Film mFilm, String city, String date_debut, String date_fin, String place){
-		this.city = city;
-		begin = date_debut;
-		end = date_fin;
-		this.place = place;
-		this.film = film;
+	public Tournage(Film mFilm, String mCity, String mPlace,String mDate_debut, String mDate_fin){
+		this.city = mCity;
+		this.begin = mDate_debut;
+		this.end = mDate_fin;
+		this.place = mPlace;
+		this.film = mFilm;
 
 	}
 	public String toString(){
-		return "Tournage du film "+film.getTitle()+" numéro "+nTournage;
+		return "Tournage "+film.getTitle()+" n° "+Integer.valueOf(nTournage);
 	}
 	public void setNumber(int number){
 		this.nTournage = number;

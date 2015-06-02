@@ -42,22 +42,21 @@ public class OntologyPopulater {
 	private static final String A_ACTEUR = "OWLObjectProperty_1bc18fca_20d8_42ce_bfe3_052694f49f56";
 	private static final String A_LANGUAGE = "OWLObjectProperty_7667e93a_71e3_4e45_8cf5_3f73b22dbd93";
 	private static final String A_ORIGINE = "OWLObjectProperty_e901b167_e487_4ddf_b17f_b680ba4a88fb";
-	private static final String A_TOURNAGE = "OWLObjectProperty_87d9174a_a47a_413a_80b0_495123433d6c";
+	private static final String A_FILM = "OWLObjectProperty_154b4a84_d27c_44a5_9718_083e749dea60";
 	private static final String A_TYPE = "OWLObjectProperty_50deed6e_6715_4bc1_8c44_ccb165251b4e";
 	private static final String A_JOUE_DANS = "OWLObjectProperty_4d4acc34_54e2_49ef_bda1_414e2f188239";
 	private static final String A_POUR_GENRE = "OWLObjectProperty_0b4da05e_5cba_4ed9_9245_88e352bade3c";
-	private static final String A_POUR_LIEU = "OWLObjectProperty_200ba544_4092_461b_99fd_14cf1eb2f970";
 	private static final String A_POUR_REAL = "OWLObjectProperty_c8e430da_3bee_4e3e_a4d1_a97f539060ea";
 	private static final String A_REAL = "OWLObjectProperty_42aa91d7_9cf6_42f1_ac02_688fcd4fb1e2";
 	private static final String A_NOTE = "OWLDataProperty_8819a1bb_e58e_4248_8b57_06d580d9eed1";
-	private static final String TOURNE_RUE = "OWLObjectProperty_cb3c6f0b_111c_4dad_aa96_b25d1a7ff4ed";
-	private static final String TOURNE_VILLE = "OWLObjectProperty_fbdcd4dc_df47_4191_ad15_c359a3c40cb2";
+	private static final String TOURNE_RUE = "OWLObjectProperty_200ba544_4092_461b_99fd_14cf1eb2f970";
+	private static final String TOURNE_VILLE = "OWLObjectProperty_804133dc_4dcb_4f9c_a499_2fc8a9738b63";
 	private static final String FOUND_OMDB = "OWLDataProperty_285859ec_d95c_4587_b393_d02bf1047011";
 	private static final String A_COMMENCE = "OWLDataProperty_fb787a53_e56f_42b1_b8e4_38493c53e977";
 	private static final String A_FINI = "OWLDataProperty_ef4a96cc_1ba9_4ab8_9e50_0feba4e90aad";
 	private static final String EST_SORTIE = "OWLDataProperty_7c889767_6e96_4976_a2c7_b1895ae0c13e";
-	private static final String A_NUMERO = "OWLDataProperty_3c49d7ab_b053_46df_9c54_4e3ed2f754a8";
-	private static final String A_NOMBRE_TOURNAGE = "OWLDataProperty_61d7779d_a3f1_4f31_847a_adcfbd202355";
+	private static final String A_NUMERO = "OWLDataProperty_abedcd89_074d_4f6f_af64_1ef938475df8";
+	private static final String A_NOMBRE_TOURNAGE = "OWLDataProperty_0b45e466_bd36_4ea8_97cb_cd69ed9f88f3";
 
 	
 
@@ -222,6 +221,7 @@ public class OntologyPopulater {
 		addThing(tournage.toString());
 		addThing(tournage.getPlace());
 		linkObjectWithObject(tournage.toString(), TOURNE_RUE, tournage.getPlace());
+		linkObjectWithObject(tournage.toString(), A_FILM, tournage.getFilm().getTitle());
 		addThing(tournage.getCity());
 		linkObjectWithObject(tournage.toString(), TOURNE_VILLE, tournage.getCity());
 		linkObjectWithString(tournage.toString(),A_COMMENCE, tournage.getBegin());

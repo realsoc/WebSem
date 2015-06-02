@@ -86,15 +86,15 @@ class Main{
 			e.printStackTrace();
 		}
 		try{
-			BufferedReader toto = new BufferedReader(new FileReader(CSV_DIR+CSV_SOURCE));
+			BufferedReader titi = new BufferedReader(new FileReader(CSV_DIR+CSV_SOURCE));
 	  		int index;
 	  		int blou = 0;
 	  		Tournage nTournage;
 	  		Film nFilm;
-	  		String line = toto.readLine();
+	  		String lone = titi.readLine();
 	  		String[] tournageParsed;
-	  		while ((line = toto.readLine()) != null) {
-	  			tournageParsed = line.split(CSV_SPLIT_BY);
+	  		while ((lone = titi.readLine()) != null) {
+	  			tournageParsed = lone.split(CSV_SPLIT_BY);
 	  			try{
 	  				blou++;
 		  			nFilm = films.get(indexOfFilm(tournageParsed[1]));
@@ -102,10 +102,9 @@ class Main{
 					nTournage = new Tournage(nFilm,tournageParsed[0], tournageParsed[2],tournageParsed[3],tournageParsed[4]);
 					nTournage.setNumber(nFilm.getNumberOfTournage());
 					tournages.add(nTournage);
-
 				}catch(ArrayIndexOutOfBoundsException e){
 					//e.printStackTrace();
-					System.out.println(blou);
+					//System.out.println(blou);
 				}
 			}
 			
